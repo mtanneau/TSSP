@@ -106,7 +106,7 @@ function parse_cor_file(file_name)
     #     ranges_row, ranges_val
     # )
     
-    return d, row2idx, col2idx, coeffs_row, coeffs_col, coeffs_val, obj_col, obj_val, rhs_row, rhs_val
+    return d, row2idx, col2idx, coeffs_row, coeffs_col, coeffs_val, obj_col, obj_val, rhs_row, rhs_val, senses
 end
 
 
