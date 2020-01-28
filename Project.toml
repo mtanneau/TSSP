@@ -1,0 +1,4 @@
+name = "TSSP"
+uuid = "950e6b70-9b91-4faa-912b-49947581a7ef"
+authors = ["Mathieu Tanneau <mathieu.tanneau@gmail.com>"]
+version = "0.1.0"
