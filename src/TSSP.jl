@@ -245,6 +245,4 @@ function deterministic_problem(tssp::TwoStageStochasticProgram, optimizer)
     return model
 end
 
-# TODO: column-generation formulation from TSSP in standard form.
-
 end # module
