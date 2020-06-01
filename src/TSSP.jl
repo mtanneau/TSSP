@@ -7,6 +7,7 @@ using JuMP
 
 import SMPSReader
 const SMPS = SMPSReader
+import SMPSReader.QPSReader.QPSData
 
 """
 
@@ -65,7 +66,7 @@ end
 
 Build a TwoStageStochasticProgram from smps data.
 """
-function TwoStageStochasticProgram(cdat::SMPS.QPSReader.QPSData, tdat::SMPS.TimeData, sdat::SMPS.StocData)
+function TwoStageStochasticProgram(cdat::QPSData, tdat::SMPS.TimeData, sdat::SMPS.StocData)
 
     # Parition rows and columns into 1st and 2nd time periods
     j1 = cdat.varindices[tdat.cols[1]]  # Index of first 1st-period variable

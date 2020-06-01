@@ -4,7 +4,7 @@ using SparseArrays
 using Random
 
 import Linda
-import TSSP
+include("../src/TSSP.jl")
 
 import Gurobi
 const GRBENV = Gurobi.Env()
@@ -14,7 +14,7 @@ const SMPS = SMPSReader
 
 using JuMP
 
-const RMPDIR = joinpath(@__DIR__, "../../data/rmp")
+const RMPDIR = joinpath(@__DIR__, "../data/rmp")
 
 """
     LPOracle
@@ -223,7 +223,7 @@ function run_colgen(tssp; fname="RMP", SAVE_RMP::Bool=false)
                 frmp = joinpath(RMPDIR, "$(fname)_$(tssp.nscenarios)_$(niter).mps.bz2")
                 @info "Saving RMP at $frmp"
                 # TODO: file name
-                Gurobi.write_model(mp.rmp.inner, frmp)
+                SAVE_RMP && Gurobi.write_model(mp.rmp.inner, frmp)
             end
         end
         return nothing

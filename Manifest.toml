@@ -1,11 +1,5 @@
 # This file is machine-generated - editing it directly is not advised
 
-[[AMD]]
-deps = ["Libdl", "LinearAlgebra", "SparseArrays", "Test"]
-git-tree-sha1 = "fc66ffc5cff568936649445f58a55b81eaf9592c"
-uuid = "14f7f29c-3bd6-536c-9a0b-7339e30b5a3e"
-version = "0.4.0"
-
 [[Arpack]]
 deps = ["Arpack_jll", "Libdl", "LinearAlgebra"]
 git-tree-sha1 = "2ff92b71ba1747c5fdd541f8fc87736d82f40ec9"
@@ -38,12 +32,6 @@ deps = ["Libdl", "Pkg"]
 git-tree-sha1 = "3663bfffede2ef41358b6fc2e1d8a6d50b3c3904"
 uuid = "6e34b625-4abd-537c-b88f-471c36dfa7a0"
 version = "1.0.6+2"
-
-[[CPLEX]]
-deps = ["Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
-git-tree-sha1 = "f8dac98fbff2f7d7fe58fa1fcdbefaaaf29a1f59"
-uuid = "a076750e-1247-5638-91d2-ce28b192dca0"
-version = "0.6.5"
 
 [[Calculus]]
 deps = ["LinearAlgebra"]
@@ -164,12 +152,6 @@ git-tree-sha1 = "84c1cf8bec4729b8b2ef4dfc4e1db1b892ad0d30"
 uuid = "4076af6c-e467-56ae-b986-b466b2749572"
 version = "0.21.2"
 
-[[LDLFactorizations]]
-deps = ["AMD", "LinearAlgebra", "SparseArrays", "Test"]
-git-tree-sha1 = "b72dc29a6c614fcdc56797874d353979076a1f3e"
-uuid = "40e66cde-538c-5869-a4ad-c39174c6795b"
-version = "0.4.0"
-
 [[LibGit2]]
 deps = ["Printf"]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
@@ -226,18 +208,6 @@ version = "0.4.3"
 
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
-
-[[Mosek]]
-deps = ["Libdl", "Pkg", "Printf", "SparseArrays", "WinReg"]
-git-tree-sha1 = "883be630ab4a25991037c2a2079d7170a5a8908e"
-uuid = "6405355b-0ac2-5fba-af84-adbd65488c0e"
-version = "1.1.3"
-
-[[MosekTools]]
-deps = ["MathOptInterface", "Mosek", "Printf"]
-git-tree-sha1 = "32dfda03b6bfce5fa1d484091026c5faa7457ce2"
-uuid = "1ec41992-ff65-5c91-ac43-2df89e9693a4"
-version = "0.9.3"
 
 [[MutableArithmetics]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]
@@ -392,32 +362,12 @@ git-tree-sha1 = "7c53c35547de1c5b9d46a4797cf6d8253807108c"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 version = "0.9.5"
 
-[[Tulip]]
-deps = ["LDLFactorizations", "LinearAlgebra", "Logging", "MathOptInterface", "Printf", "QPSReader", "SparseArrays", "SuiteSparse", "Test"]
-git-tree-sha1 = "1551fe597a0beed43b1737274bbb3aa4e1ef6be4"
-uuid = "6dd1b50a-3aae-11e9-10b5-ef983d2400fa"
-version = "0.5.0"
-
 [[UUIDs]]
 deps = ["Random", "SHA"]
 uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [[Unicode]]
 uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
-
-[[UnitBlockAngular]]
-deps = ["LinearAlgebra", "SparseArrays", "Tulip"]
-git-tree-sha1 = "500ca7fa53b99719c2cd189a9de5f01646750cec"
-repo-rev = "master"
-repo-url = "https://github.com/mtanneau/UnitBlockAngular.jl"
-uuid = "14f8afec-b63c-4272-9b79-c31d0438941a"
-version = "0.1.0"
-
-[[WinReg]]
-deps = ["Test"]
-git-tree-sha1 = "808380e0a0483e134081cc54150be4177959b5f4"
-uuid = "1b915085-20d7-51cf-bf83-8f477d6f5128"
-version = "0.3.1"
 
 [[Zlib_jll]]
 deps = ["Libdl", "Pkg"]
