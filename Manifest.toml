@@ -161,7 +161,9 @@ uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
 [[Linda]]
 deps = ["LinearAlgebra", "MathOptInterface", "Printf", "Random"]
-path = "../Linda.jl"
+git-tree-sha1 = "c17ab6d0782e8fa32ed075b7889d7e3216dd61b6"
+repo-rev = "Callback"
+repo-url = "https://github.com/mtanneau/Linda.jl"
 uuid = "b14b051f-ebd0-51dc-855f-9ee05635490d"
 version = "0.0.0"
 
@@ -293,8 +295,10 @@ version = "0.2.2+0"
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 
 [[SMPSReader]]
-deps = ["Distributions", "Gurobi", "Logging", "QPSReader", "SparseArrays", "TimerOutputs"]
-path = "../SMPSReader.jl"
+deps = ["Logging", "QPSReader"]
+git-tree-sha1 = "39826e83fa46672f2147a873e70bbba910cc2194"
+repo-rev = "a2f41a9a2cf44386aa4169ec26d59c667ddf4c6a"
+repo-url = "https://github.com/mtanneau/SMPSReader.jl"
 uuid = "702600ef-4881-4890-820b-5f0d39c8a3e9"
 version = "0.1.0"
 
