@@ -152,7 +152,7 @@ Generate the initial master problem.
 
 """
 function generate_master(tssp, oracles; M=1e4)
-    rmp = Gurobi.Optimizer(GRBENV, OutputFlag=0, Threads=1)
+    rmp = Gurobi.Optimizer(GRBENV, OutputFlag=0, Threads=1, Method=2)
     jrmp = JuMP.direct_model(rmp)
     
     # Instantiate RMP
