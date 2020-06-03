@@ -17,16 +17,15 @@ We consider the TSSP instances with at least 1000 scenarios, which are displayed
 
 | `.cor` file | `.tim` file | `.sto` file |
 |:------------|:------------|:------------|
-`env.cor`, `env.cor.diss` | `env.tim` | `env.sto.N`
-`4node.cor`, `4node.cor.base` | `4node.tim` | `4node.sto.N`
+`env.cor`, `env.cor.diss` | `env.tim` | `env.sto.[1200-32928]`
+`4node.cor`, `4node.cor.base` | `4node.tim` | `4node.sto.[1024-32768]`
 `phone.cor` | `phone.tim` | `phone.sto`
 `stormG2.cor` | `stormG2.tim` | `stormG2_1000.sto`
-
-We remove `assets` and `phone` instances because they are solved in a single iteration.
+`assets.cor` | `assets.tim` | `assets.sto.large`
 
 Each instance is solved by column-generation, with Gurobi (default parameters) as the MP solver.
 Sub-problems are solved by Gurobi as LPs.
-The column-generation algorithm is implemented in the un-registered package [Linda.jl](https://github.com/mtanneau/Linda.jl).
+The column-generation algorithm is implemented in the (unregistered) package [Linda.jl](https://github.com/mtanneau/Linda.jl).
 
 We save the RMP every 10 iterations of the CG procedure, and at the final iteration.
 This gives a dataset of structured LPs.
@@ -49,6 +48,9 @@ PackageCompiler.create_sysimage([:JuMP, :LinearAlgebra, :SparseArrays, :Gurobi, 
     ```bash
     julia exp/jobs.jl > exp/jobs.txt
     ```
+
+1. Create `exp/log` and `data/rmp` directories.
+If they already exist, ensure they are empty as files will be over-written.
 
 2. Run the jobs, e.g. with GNU `parallel`
     ```bash
