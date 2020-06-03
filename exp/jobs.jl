@@ -1,10 +1,13 @@
 const TSSPDIR = "data/tssp"
-const LOGDIR = "exp/colgen/log"
+const LOGDIR = "exp/log"
 
 function print_job(fcore, ftime, fsto, frmp, flog)
-    println("julia --project --sysimage=JuliaTSSP.so exp/colgen/colgen.jl $TSSPDIR/$fcore $TSSPDIR/$ftime $TSSPDIR/$fsto $frmp > $LOGDIR/$flog.log 2>&1")
+    println("julia --project --sysimage=JuliaTSSP.so exp/colgen.jl $TSSPDIR/$fcore $TSSPDIR/$ftime $TSSPDIR/$fsto $frmp > $LOGDIR/$flog.log 2>&1")
     return nothing
 end
+
+# assets
+print_job("assets.cor", "assets.tim", "assets.sto.large", "assets", "assets")
 
 # 4node & 4node-base
 for S in  2 .^ [10, 11, 12, 13, 14, 15]
