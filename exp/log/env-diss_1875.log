@@ -1,0 +1,31 @@
+[ Info: Saving RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/env-diss_1875_10.mps.bz2
+[ Info: Saving last RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/env-diss_1875_15.mps.bz2
+┌ Info: Colgen stats
+│   mp.primal_lp_bound = -20809.288243286042
+└   mp.dual_bound = -20809.28824328609
+Iter      Primal Obj.       Dual bound    %Gap     #Cols   Time(s)   BarIter   SpxIter
+   0  +1.83656583e+06             -Inf  100.00      1875      0.06        10         9
+   1  +1.83177349e+06             -Inf  100.00      2250      0.20        20        19
+   2  +1.82481811e+06             -Inf  100.00      2625      0.33        29        32
+   3  +1.42271954e+06             -Inf  100.00      3000      0.44        38        47
+   4  +7.16917084e+05             -Inf  100.00      3375      0.54        48        60
+   5  +1.16632662e+05             -Inf  100.00      3750      0.63        59        94
+   6  +1.35594092e+04             -Inf  100.00      4125      0.73        70       111
+   7  +7.15077149e+03             -Inf  100.00      4500      0.84        82       127
+   8  +5.86837695e+02             -Inf  100.00      4875      0.98        95       146
+   9  -4.75638937e+03             -Inf  100.00      5250      1.10       110       275
+  10  -1.01024184e+04             -Inf  100.00      5625      1.54       134       304
+  11  -1.18887037e+04             -Inf  100.00      6000      1.66       148       349
+  12  -1.50046104e+04             -Inf  100.00      6375      1.86       170       903
+  13  -1.86508534e+04             -Inf  100.00      6750      2.12       188      1462
+  14  -2.06144624e+04             -Inf  100.00      7125      2.44       206      2177
+  15  -2.08092882e+04  -2.08092882e+04    0.00      7169      2.75       224      3073
+CG terminated with status OPTIMAL
+
+Total time / MP: 0.44s
+Total time / SP: 1.29s
+Total time / CG: 2.75s
+Inner barrier iterations: 224
+Inner simplex iterations: 3073
+Pricing calls: 10037
+  2.768134 seconds (4.22 M allocations: 182.114 MiB, 1.56% gc time)

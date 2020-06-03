@@ -1,0 +1,29 @@
+[ Info: Saving RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/env-diss_1200_10.mps.bz2
+[ Info: Saving last RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/env-diss_1200_13.mps.bz2
+┌ Info: Colgen stats
+│   mp.primal_lp_bound = -20808.593189241885
+└   mp.dual_bound = -20808.593189241878
+Iter      Primal Obj.       Dual bound    %Gap     #Cols   Time(s)   BarIter   SpxIter
+   0  +1.83656583e+06             -Inf  100.00      1200      0.07        10         9
+   1  +1.83177349e+06             -Inf  100.00      1440      0.16        20        19
+   2  +1.82493061e+06             -Inf  100.00      1680      0.24        29        31
+   3  +1.70730301e+06             -Inf  100.00      1920      0.30        39        44
+   4  +8.08501796e+05             -Inf  100.00      2160      0.37        50        60
+   5  +1.34555845e+05             -Inf  100.00      2400      0.55        60        87
+   6  +1.28498091e+04             -Inf  100.00      2640      0.62        70       103
+   7  +5.80853370e+03             -Inf  100.00      2880      0.70        80       118
+   8  -1.20575282e+03             -Inf  100.00      3120      0.78        91       132
+   9  -6.33557843e+03             -Inf  100.00      3360      0.87       103       141
+  10  -1.14560469e+04             -Inf  100.00      3600      1.18       124       239
+  11  -1.25840842e+04             -Inf  100.00      3840      1.26       136       259
+  12  -1.77004728e+04             -Inf  100.00      4080      1.56       149       567
+  13  -2.08085932e+04  -2.08085932e+04    0.00      4173      1.76       163       868
+CG terminated with status OPTIMAL
+
+Total time / MP: 0.18s
+Total time / SP: 0.73s
+Total time / CG: 1.76s
+Inner barrier iterations: 163
+Inner simplex iterations: 868
+Pricing calls: 5020
+  1.772927 seconds (2.16 M allocations: 93.311 MiB, 13.68% gc time)

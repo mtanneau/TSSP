@@ -1,0 +1,42 @@
+[ Info: Saving RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/4node-base_4096_10.mps.bz2
+[ Info: Saving RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/4node-base_4096_20.mps.bz2
+[ Info: Saving last RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/4node-base_4096_25.mps.bz2
+┌ Info: Colgen stats
+│   mp.primal_lp_bound = -424.71419677734326
+└   mp.dual_bound = -424.75250000000045
+Iter      Primal Obj.       Dual bound    %Gap     #Cols   Time(s)   BarIter   SpxIter
+   0  +0.00000000e+00             -Inf  100.00      4096      0.06         6        10
+   1  -1.60030137e+02             -Inf  100.00      4915      0.40        12        20
+   2  -2.12303254e+02             -Inf  100.00      5734      0.80        35        31
+   3  -2.24628662e+02             -Inf  100.00      6553      1.34        81        54
+   4  -2.78749843e+02             -Inf  100.00      7372      1.95       110        73
+   5  -2.89257781e+02             -Inf  100.00      8191      2.66       138       151
+   6  -3.02442626e+02             -Inf  100.00      9010      3.52       169       228
+   7  -3.31469229e+02             -Inf  100.00      9829      4.60       195       250
+   8  -3.40918085e+02             -Inf  100.00     10648      5.99       232       281
+   9  -3.44765946e+02             -Inf  100.00     11467      7.66       269       301
+  10  -3.49293791e+02             -Inf  100.00     12286     10.81       305       319
+  11  -3.65564915e+02             -Inf  100.00     13105     12.58       341       360
+  12  -3.73936383e+02             -Inf  100.00     13924     14.49       376       399
+  13  -3.80162085e+02             -Inf  100.00     14743     20.09       410       438
+  14  -3.83762816e+02             -Inf  100.00     15562     21.75       435       545
+  15  -3.88889562e+02             -Inf  100.00     16381     23.59       463       666
+  16  -3.95335181e+02             -Inf  100.00     17200     25.79       500       691
+  17  -4.01482012e+02             -Inf  100.00     18019     28.09       534       722
+  18  -4.04635902e+02             -Inf  100.00     18838     30.63       574       830
+  19  -4.08861114e+02             -Inf  100.00     19657     32.85       601       917
+  20  -4.14064672e+02             -Inf  100.00     20476     37.84       631       973
+  21  -4.17522052e+02             -Inf  100.00     21295     40.35       653      1130
+  22  -4.20057796e+02             -Inf  100.00     22114     43.42       687      1315
+  23  -4.21378734e+02             -Inf  100.00     22933     46.19       713      1838
+  24  -4.23579561e+02             -Inf  100.00     23752     49.95       741      2989
+  25  -4.24714197e+02  -4.24752500e+02    0.01     24001     53.69       766      4134
+CG terminated with status OPTIMAL
+
+Total time / MP: 35.79s
+Total time / SP: 10.47s
+Total time / CG: 53.69s
+Inner barrier iterations: 766
+Inner simplex iterations: 4134
+Pricing calls: 28078
+ 53.712193 seconds (17.60 M allocations: 623.840 MiB, 0.38% gc time)
