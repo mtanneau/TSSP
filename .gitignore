@@ -1,1 +1,3 @@
 data/
+JuliaTSSP.so
+exp/precompile.jl
