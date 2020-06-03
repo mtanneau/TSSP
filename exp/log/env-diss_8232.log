@@ -1,0 +1,31 @@
+[ Info: Saving RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/env-diss_8232_10.mps.bz2
+[ Info: Saving last RMP at /local_workspace/tannmath/TSSP/exp/../data/rmp/env-diss_8232_15.mps.bz2
+┌ Info: Colgen stats
+│   mp.primal_lp_bound = -20799.26653928344
+└   mp.dual_bound = -20799.266423627396
+Iter      Primal Obj.       Dual bound    %Gap     #Cols   Time(s)   BarIter   SpxIter
+   0  +1.83656583e+06             -Inf  100.00      8232      0.09        10         9
+   1  +1.83172034e+06             -Inf  100.00      9878      0.68        19        17
+   2  +1.82571818e+06             -Inf  100.00     11524      1.22        29        31
+   3  +1.70163129e+06             -Inf  100.00     13170      1.68        38        49
+   4  +1.00073360e+06             -Inf  100.00     14816      2.11        49        65
+   5  +2.55249141e+05             -Inf  100.00     16462      2.52        61       115
+   6  +1.51299126e+04             -Inf  100.00     18108      3.00        74       173
+   7  +7.35845957e+03             -Inf  100.00     19754      3.52        89       212
+   8  +1.48268125e+03             -Inf  100.00     21400      4.05       105       302
+   9  -3.82704326e+03             -Inf  100.00     23046      4.70       146       367
+  10  -6.65511279e+03             -Inf  100.00     24692      6.42       163       538
+  11  -1.11476776e+04             -Inf  100.00     26338      7.24       190      1049
+  12  -1.50585666e+04             -Inf  100.00     27984      8.35       238      2403
+  13  -1.82406117e+04             -Inf  100.00     29630      9.48       256      3554
+  14  -2.02243422e+04             -Inf  100.00     31276     10.91       276      7413
+  15  -2.07992665e+04  -2.07992664e+04    0.00     31486     12.42       300     11280
+CG terminated with status OPTIMAL
+
+Total time / MP: 2.45s
+Total time / SP: 5.67s
+Total time / CG: 12.42s
+Inner barrier iterations: 300
+Inner simplex iterations: 11280
+Pricing calls: 43251
+ 12.440920 seconds (17.92 M allocations: 771.466 MiB, 1.10% gc time)
